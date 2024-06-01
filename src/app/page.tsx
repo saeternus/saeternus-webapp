@@ -34,7 +34,6 @@ export default function Home() {
           <ArrowRight className='ml-2 h-5 w-5' />
         </Link>
       </MaxWidthWrapper>
-
       {/* Feature section */}
       <div className='mx-auto flex max-w-5xl flex-col items-center justify-center sm:mt-56'>
         <div className='mb-12 px-6 text-center lg:px-8'>

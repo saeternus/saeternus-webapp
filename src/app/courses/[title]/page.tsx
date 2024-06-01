@@ -1,28 +1,67 @@
-'use client';
-
-import { getCourseDetailById } from '@/api/course/course';
+import { Metadata } from 'next';
+import { getCourseByTitle } from '@/api/course/course';
 import { CourseDetails } from '@/api/course/course.types';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { Badge } from '@/components/ui/badge';
 import { buttonVariants } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { slugify } from '@/lib/utils';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { cn } from '@/lib/utils';
+import { getSeoKeywords } from '@/api/keywords/keywords';
 
-export default function Page({ params }: { params: { courseId: string } }) {
-  const [course, setCourse] = useState<CourseDetails | undefined>(undefined);
+const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
 
-  useEffect(() => {
-    const course = getCourseDetailById(params.courseId);
-    setCourse(course);
-  }, [course, params.courseId]);
+export async function generateMetadata({
+  params,
+}: {
+  params: { title: string };
+}): Promise<Metadata> {
+  const course = await getCourseByTitle(params.title);
+
+  if (!course) {
+    return {
+      title: 'Course not found',
+      description: 'The course you are looking for does not exist.',
+    };
+  }
+
+  return {
+    title: `${course.title}`,
+    description: course.description,
+    openGraph: {
+      title: `${course.title} - Saeternus`,
+      description: course.description,
+      url: `${baseURL}/courses/${slugify(course.title)}`,
+      images: [
+        {
+          url: course.image || `${baseURL}/android-chrome-192x192.png`,
+        },
+      ],
+    },
+  };
+}
+
+export default async function Page({ params }: { params: { title: string } }) {
+  const course: CourseDetails | undefined = await getCourseByTitle(
+    params.title
+  );
+  const allKeywords = getSeoKeywords();
+  const courseKeywords = allKeywords['course'];
+  const formatKeywords = (keywords: string[]) => {
+    const formattedKeywords = keywords.map((keyword: string) => keyword.trim());
+    return (
+      formattedKeywords.slice(0, -1).join(', ') +
+      ', ' +
+      formattedKeywords[formattedKeywords.length - 1]
+    );
+  };
+  const keywords = formatKeywords(courseKeywords);
 
   return (
     <MaxWidthWrapper className='mt-12 flex flex-col items-center justify-center'>
@@ -60,7 +99,6 @@ export default function Page({ params }: { params: { courseId: string } }) {
                       ${course.currentPrice}
                     </span>
                   </div>
-                  {/* TODO: add link to course registeration form */}
                   <Link
                     className={buttonVariants({
                       size: 'lg',
@@ -91,13 +129,6 @@ export default function Page({ params }: { params: { courseId: string } }) {
                       key={meta.title}
                       className='gap-2 sm:flex sm:flex-wrap'
                     >
-                      {/* PENDING: add logo/icons for meta */}
-                      {/* <Image
-                        src={meta.image}
-                        alt={meta.title}
-                        width={50}
-                        height={50}
-                      /> */}
                       <div className='gap-2 rounded-sm p-2 sm:p-1'>
                         <h3 className='text-sm text-primary sm:text-lg'>
                           {meta.title}
@@ -126,6 +157,12 @@ export default function Page({ params }: { params: { courseId: string } }) {
       ) : (
         <p>Course not found</p>
       )}
+      <div className='mt-20 h-1/2 w-full text-wrap  text-left'>
+        <h1 className='text-xs font-bold '>Keywords</h1>
+        <div className='flex items-center justify-start break-normal text-xs text-gray-600'>
+          {keywords}.
+        </div>
+      </div>
     </MaxWidthWrapper>
   );
 }
