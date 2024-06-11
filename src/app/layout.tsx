@@ -4,7 +4,11 @@ import { cn } from '@/lib/utils';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { satoshi } from '@/utils/customfonts';
+
+// const inter = Inter({ subsets: ['latin'] });
+
 import { GoogleTagManager } from '@next/third-parties/google';
+
 
 export const metadata: Metadata = {
   title: 'Saeternus',
