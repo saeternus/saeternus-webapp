@@ -2,6 +2,14 @@ import React from 'react';
 import CourseCard from '@/components/CourseCard';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { getAllCourses } from '@/api/course/course';
+import { Metadata } from 'next';
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'Courses',
+    description: 'Courses offered by Saeternus.',
+  };
+}
 
 export default function Course() {
   const courses = getAllCourses();
