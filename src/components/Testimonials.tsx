@@ -79,7 +79,7 @@ const testimonials = [
     title: 'Research Scholar',
   },
   {
-    image: '/images/Preeti_Mishra.jpg',
+    image: '/images/Preeti_Mishra.JPG',
     quote: (
       <div>
         The overall experience was really overwhelming. Teachers were very

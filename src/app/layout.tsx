@@ -7,7 +7,7 @@ import { satoshi } from '@/utils/customfonts';
 import { GoogleTagManager } from '@next/third-parties/google';
 
 const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
-const description = 'Transform your career with Saeternus';
+const description = 'Innovating for your success';
 
 export const metadata: Metadata = {
   metadataBase: new URL(`${baseURL}`),
