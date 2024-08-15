@@ -36,7 +36,6 @@ const testimonials = [
   },
   {
     image: '/images/Rajesh_Raman.jpeg',
-    image: '/images/Rajesh_Raman.jpeg',
     quote: (
       <div>
         The instructor was very methodological and patient and made learning
@@ -48,7 +47,6 @@ const testimonials = [
     title: 'Additional Professor',
   },
   {
-    image: '/images/Sudha_Rawat.jpeg',
     image: '/images/Sudha_Rawat.jpeg',
     quote: (
       <div>
@@ -67,7 +65,6 @@ const testimonials = [
   },
   {
     image: '/images/Kavita_Verma.jpg',
-    image: '/images/Kavita_Verma.jpg',
     quote: (
       <div>
         The classes were very well planned and modified as per the needs of the
@@ -82,7 +79,7 @@ const testimonials = [
     title: 'Research Scholar',
   },
   {
-    image: '/images/Preeti_Mishra.JPG',
+    image: '/images/Preeti_Mishra.jpg',
     quote: (
       <div>
         The overall experience was really overwhelming. Teachers were very
@@ -99,7 +96,6 @@ const testimonials = [
   },
   {
     image: '/images/Rati_Prabha.jpg',
-    image: '/images/Rati_Prabha.jpg',
     quote: (
       <div>
         The instructor was very methodological, and her structured approach for
@@ -114,7 +110,6 @@ const testimonials = [
     title: 'Associate Professor',
   },
   {
-    image: '/images/Prakarsh_Srivastava.jpg',
     image: '/images/Prakarsh_Srivastava.jpg',
     quote: (
       <div>

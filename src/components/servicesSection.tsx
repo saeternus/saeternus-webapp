@@ -17,7 +17,7 @@ const services: Service[] = [
   {
     imageSrc: "/images/placeholder.png",
     title: "College Shortlisting",
-    description: "Tailored SOP/Essay\nIn this service, we camouflage your weak areas and accentuate your strengths, specifically customizing your essay to align with the admission committee's mindset for each college."
+    description: "customizing your essay to align with the admission committee's mindset for each college."
   },
   {
     imageSrc: "/images/placeholder.png",
@@ -33,12 +33,17 @@ const services: Service[] = [
     imageSrc: "/images/placeholder.png",
     title: "End-to-End Guidance",
     description: " for pathway into Industry and Academia"
+  },
+  {
+    imageSrc: "/images/placeholder.png",
+    title: "Tailored SOP/Essay",
+    description: " In this service, we camouflage your weak areas and accentuate your strengths, specifically customizing your essay to align with the admission committee's mindset for each college."
   }
 ];
 
 const ServicesSection: React.FC = () => {
   return (
-    <section className="flex flex-col items-center p-12 pb-20 mx-10 mt-10 bg-secondary bg-opacity-20 rounded-[50px]">
+    <section className="flex flex-col items-center p-12 pb-20 bg-secondary bg-opacity-">
       <h2 className="text-sm font-bold tracking-normal leading-4 text-primary uppercase mt-4 max-md:mt-10 max-md:max-w-full">
         Services
       </h2>
@@ -59,7 +64,7 @@ const ServicesSection: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-4 self-start mt-10 ml-20 text-sm font-bold tracking-normal leading-4 text-center text-white uppercase max-md:ml-2.5">
+      <div className="flex gap-4 self-start mt-10 ml-20 text-sm font-bold tracking-normal leading-4 text-center text-primary uppercase max-md:ml-2.5">
         <Image width={100} height={100} loading="lazy" src="/images/placeholder.png" alt="" className="shrink-0 aspect-square fill-pink-500 w-[62px]" />
         <button className="my-auto">Connect Now</button>
       </div>
