@@ -1,6 +1,6 @@
 import ContactUsSection from '@/components/servicesContactNow';
-import ServicesSection from '@/components/servicesSection';
-import TestimonialSection from '@/components/servicesTestimonial';
+import ServicesSection from '@/components/ServicesSection';
+import TestimonialSection from '@/components/ServicesTestimonial';
 
 export default function Services() {
   return (
