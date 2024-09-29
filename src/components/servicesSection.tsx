@@ -22,42 +22,42 @@ const services = [
     icon: <UserRoundPen className='h-10 w-10 text-primary' />,
     title: 'Profile Evaluation',
     description:
-      'Track your expenses effortlessly with our intuitive budget tracking tools. Do cillum culpa labore laboris incididunt velit ipsum.',
+      'Get a thorough assessment of your academic and professional profile, helping you identify your strengths and areas for improvement.',
     delay: 0.1,
   },
   {
     icon: <NotebookText className='h-10 w-10 text-primary' />,
     title: 'College Shortlisting',
     description:
-      "Customizing your essay to align with the admission committee's mindset for each college. Do cillum culpa labore laboris incididunt velit ipsum.",
+      'We guide you in selecting the best-fit colleges and craft personalized applications aligining with their values, leaving a lasting impression on the admissions committee.',
     delay: 0.3,
   },
   {
     icon: <MessageSquare className='h-10 w-10' />,
-    title: 'MS/PhD interviews',
+    title: 'MS/PhD Interviews',
     description:
-      'Track your expenses effortlessly with our intuitive budget tracking tools. Do cillum culpa labore laboris incididunt velit ipsum.',
+      'Sharpen your interview skills with tailored mock sessions and expert feedback, ensuring you leave a lasting impression on admission committees.',
     delay: 0.5,
   },
   {
     icon: <Plane className='h-10 w-10 text-primary' />,
     title: 'Visa Interviews',
     description:
-      'Track your expenses effortlessly with our intuitive budget tracking tools. Do cillum culpa labore laboris incididunt velit ipsum.',
+      'Receive personalized coaching to help you confidently navigate your visa interview process, ensuring you are well-prepared for success.',
     delay: 0.2,
   },
   {
     icon: <Globe className='h-10 w-10 text-primary' />,
     title: 'End-to-End Guidance',
     description:
-      'For pathway into Industry and Academia. Do cillum culpa labore laboris incididunt velit ipsum.',
+      'Comprehensive support from applications to acceptances and beyond, optimized for your larger career goal in mind, be it academia or industry.',
     delay: 0.4,
   },
   {
     icon: <Pencil className='h-10 w-10' />,
-    title: 'Tailored SOP/Essay',
+    title: 'Tailored SoPs and Essays',
     description:
-      "In this service, we camouflage your weak areas and accentuate your strengths, customizing your essay to align with the admission committee's mindset for each college.",
+      'Our experts will work with you to craft a compelling Statement of Purpose that aligns your profile with the goals of your target program or research groups.',
     delay: 0.6,
   },
 ];

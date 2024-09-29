@@ -111,12 +111,12 @@ function Page() {
       </div>
       <AdmissionFeatures />
       <ServicesSection />
-      <div className='bg-gray-100 p-10'>
+      {/* <div className='bg-gray-100 p-10'>
         <h1 className='p-10 text-center text-3xl font-semibold sm:text-4xl'>
           What <span className='text-primary'>Saeternites</span> say about us...
         </h1>
         <TestimonialSection />
-      </div>
+      </div> */}
       <ContactPage />
     </div>
   );
