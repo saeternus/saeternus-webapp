@@ -5,8 +5,8 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import AdmissionFeatures from '@/components/AdmissionFeatures';
 import AdmissionHero from '@/components/AdmissionHero';
-import ServicesSection from '@/components/servicesSection';
-import TestimonialSection from '@/components/servicesTestimonial';
+import ServicesSection from '@/components/ServicesSection';
+import TestimonialSection from '@/components/ServicesTestimonial';
 import ContactPage from './_components/Contact';
 import { Crown } from 'lucide-react';
 
