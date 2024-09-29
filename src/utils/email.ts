@@ -1,11 +1,40 @@
-import { FormData } from '@/app/contact-us/page';
+import { FormData as ContactFormData } from '@/app/contact-us/page';
+import { FormData as AdmissionsFormData } from '@/app/admissions-consulting/_components/Contact';
 
-export function sendEmail(data: FormData) {
+export function sendEmail(data: ContactFormData | AdmissionsFormData) {
   const apiEndpoint = '/api/email';
+
+  const currentPage = window.location.pathname;
+
+  let formDataToSend: any = {};
+
+  if (currentPage === '/contact-us') {
+    const contactData = data as ContactFormData;
+    formDataToSend = {
+      name: contactData.name,
+      email: contactData.email,
+      number: contactData.number,
+      subject: contactData.subject,
+      message: contactData.message,
+      route: '/contact-us',
+    };
+  } else if (currentPage === '/admissions-consulting') {
+    const admissionsData = data as AdmissionsFormData;
+    formDataToSend = {
+      name: admissionsData.name,
+      email: admissionsData.email,
+      number: admissionsData.number,
+      program: admissionsData.program,
+      route: '/admissions-consulting',
+    };
+  }
 
   fetch(apiEndpoint, {
     method: 'POST',
-    body: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(formDataToSend),
   })
     .then((res) => res.json())
     .then((response) => {
