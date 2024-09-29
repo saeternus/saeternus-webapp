@@ -199,7 +199,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: '2024-09-27',
+    startDate: '2024-10-04',
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
@@ -502,49 +502,48 @@ const detailedCourses: CourseDetails[] = [
         title: 'Parametric Tests-I',
         day: 'Day 4',
         description:
-          'Parametric Tests: One Sample (Z-Test/Normal Test), Two Sample (Z-Test/Normal Test, Student t-Test, Modified t-Test), More Than Two Samples (Paired t-Test); Hands-on Practice.',
+          'One Sample (Z-Test/Normal Test), Two Sample (Z-Test/Normal Test, Student t-Test, Modified t-Test), More Than Two Samples (Paired t-Test); Hands-on Practice.',
       },
       {
         title: 'Parametric Tests-II',
         day: 'Day 5',
         description:
-          'ANOVA Family: ANOVA, ANCOVA, MANOVA, MANCOVA; Hands-on Practice.',
+          'One Way ANOVA, Two Way ANOVA, One Way ANCOVA, Two Way ANCOVA, MANOVA, and MANCOVA; Hands-on Practice.',
       },
       {
         title: 'Non-Parametric Tests-I',
         day: 'Day 6',
         description:
-          'Non-parametric Tests: One Sample (Sign Test, Wilcoxon Signed-Rank Test), Two Samples (Mann-Whitney U Test), More Than Two Samples (Note: Not recommended for more than two samples, consider Kruskal-Wallis test instead); Hands-on Practice.',
+          'Two Sample Non-Parametric Test: Mann Whitney U test, Two Paired Sample Non-Parametric Tests: Sign Test, Wilcoxon Signed Rank Test; Hands-on Practice.',
       },
       {
         title: 'Non-Parametric Tests-II',
         day: 'Day 7',
         description:
-          'Non-parametric Tests (continued): Kruskal-Wallis H Test, Friedman Test, Run Test, McNemar Test; Hands-on Practice.',
+          'Kruskal-Wallis H Test, Friedman Test, Run Test, McNemar Test; Hands-on Practice.',
       },
       {
         title: 'Qualitative Data Analysis',
         day: 'Day 8',
         description:
-          'Analysis of Categorical Data: Cross Tabulation; Chi-Square Test of Association; Kappa Statistics; Hands-on Practice.',
+          'Cross Tabulation; Chi-Square Test of Association; Kappa Statistics; Hands-on Practice.',
       },
       {
         title: 'Correlation',
         day: 'Day 9',
         description:
-          'Correlation Analysis: Pearson Correlation, Spearman Rank Correlation, Correlation Matrix; Hands-on Practice.',
+          'Pearson Correlation, Spearman Rank Correlation, Correlation Matrix; Hands-on Practice.',
       },
       {
         title: ' Regression',
         day: 'Day 10',
         description:
-          'Linear Regression: Simple Regression, Multiple Regression; Hands-on Practice.',
+          'Simple Regression, Multiple Regression; Hands-on Practice.',
       },
       {
         title: 'Logistic Regression',
         day: 'Day 11',
-        description:
-          'Logistic Regression: Bivariate, Ordinal; Hands-on Practice.',
+        description: 'Bivariate, Ordinal; Hands-on Practice.',
       },
       {
         title: 'Cluster Analysis',
@@ -556,7 +555,7 @@ const detailedCourses: CourseDetails[] = [
         title: 'Principal Component & Factor Analysis',
         day: 'Day 13',
         description:
-          'Dimensionality Reduction: Principal Component Analysis (PCA), Factor Analysis; Hands-on Practice.',
+          'Principal Component Analysis (PCA), Factor Analysis; Hands-on Practice.',
       },
       {
         title: 'Discriminant Analysis',
@@ -574,7 +573,7 @@ const detailedCourses: CourseDetails[] = [
         description: 'Multiple Case Studies; Hands-on Practice.',
       },
     ],
-    startDate: '2024-09-23',
+    startDate: '2024-10-01',
     whatYouWillLearn: [
       'Descriptive Statistics - It includes methodologies such as cross-tabulation, frequencies, and descriptive ratio statistics.',
       'Bivariate Statistics - It includes methodologies such as means, nonparametric tests, correlation, and Analysis of Variance (ANOVA).',
@@ -965,7 +964,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: '2024-09-25',
+    startDate: '2024-10-02',
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',

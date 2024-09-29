@@ -10,7 +10,6 @@ const cardVariants = {
 };
 
 const StudyAbroadGuidance: React.FC = () => {
-  // Create references and visibility states for each section
   const { ref: card1Ref, inView: card1InView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
@@ -45,9 +44,9 @@ const StudyAbroadGuidance: React.FC = () => {
             World&apos;s Best!
           </h2>
           <p className='mt-4 text-base leading-7 text-gray-600 sm:mt-8'>
-            Get expert study abroad counseling and assistance with your
-            application process. Our team of professionals will provide you with
-            personalized support and guidance.
+            Get expert study abroad counseling and assistance throughout your
+            application process. Our team will provide you with personalized
+            support and guidance.
           </p>
         </div>
 
@@ -65,7 +64,8 @@ const StudyAbroadGuidance: React.FC = () => {
               Personalized Counselling
             </h3>
             <p className='mt-5 text-base text-gray-600'>
-              Get tailored advice to fit your unique needs and goals.
+              We stand out by offering end-to-end, personalized support for
+              every applicant.
             </p>
           </motion.div>
 
@@ -82,8 +82,8 @@ const StudyAbroadGuidance: React.FC = () => {
               Profile Building + Shortlisting
             </h3>
             <p className='mt-5 text-base text-gray-600'>
-              Enhance your profile and find the best match for your academic
-              journey.
+              Get profile building tips and find the best match for your
+              academic journey.
             </p>
           </motion.div>
 
@@ -100,7 +100,8 @@ const StudyAbroadGuidance: React.FC = () => {
               Editing Guidance
             </h3>
             <p className='mt-5 text-base text-gray-600'>
-              Receive expert feedback on your application documents.
+              Receive expert feedback on your SoPs and other application
+              documents.
             </p>
           </motion.div>
 
@@ -131,10 +132,11 @@ const StudyAbroadGuidance: React.FC = () => {
           >
             <IconPlane className='mx-auto text-primary' size={50} />
             <h3 className='mt-12 text-xl font-bold text-gray-900'>
-              Visa Mentoring
+              Visa Application and Interview
             </h3>
             <p className='mt-5 text-base text-gray-600'>
-              Get expert guidance on your visa.
+              Get expert guidance on your visa application process and mock
+              interviews.
             </p>
           </motion.div>
 
@@ -151,19 +153,21 @@ const StudyAbroadGuidance: React.FC = () => {
               Scholarship Assistance
             </h3>
             <p className='mt-5 text-base text-gray-600'>
-              Get expert guidance on your scholarship applications.
+              Get expert guidance on your scholarship applications to support
+              your studies.
             </p>
           </motion.div>
         </div>
 
         <div className='flex justify-center'>
-          <motion.button
+          <motion.a
             className='mt-6 rounded-md bg-primary px-16 py-3 font-bold text-white transition-colors hover:bg-gray-800'
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            href='#contact'
           >
-            Explore More
-          </motion.button>
+            Get Started
+          </motion.a>
         </div>
       </div>
     </section>
