@@ -72,13 +72,15 @@ interface ServiceProp {
 }
 
 const ServiceCard = ({ service }: ServiceProp) => (
-  <div className='mb-6 mt-10 flex items-start space-x-6'>
-    <div className='flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-full bg-gray-50 p-5 text-primary'>
+  <div className='mb-6 mt-10 flex flex-col items-center space-y-6 text-center sm:flex-row sm:space-x-6 sm:text-left'>
+    <div className='h-13 w-13 flex  items-center justify-center rounded-full bg-gray-50 p-3 text-primary sm:h-20 sm:w-20 sm:p-5'>
       {service.icon}
     </div>
     <div className='flex-grow'>
-      <h3 className='mb-2 text-3xl font-bold text-gray-900'>{service.title}</h3>
-      <p className='text-lg text-gray-700'>{service.description}</p>
+      <h3 className='mb-2 text-2xl font-bold text-gray-900 lg:text-3xl'>
+        {service.title}
+      </h3>
+      <p className='text-md text-gray-700 lg:text-lg'>{service.description}</p>
     </div>
   </div>
 );
@@ -97,13 +99,13 @@ const ServicesSection = () => {
   const rightColumnServices = services.slice(3);
 
   return (
-    <div className='mx-auto my-auto flex h-screen max-w-7xl items-center p-4 md:p-8'>
+    <div className='mx-auto my-auto flex h-[1650px] max-w-7xl items-center p-4 sm:h-[1200px] md:h-screen md:p-8'>
       <div className='w-full'>
-        <h2 className='mb-10 text-center text-3xl font-extrabold leading-tight text-primary sm:text-4xl md:mb-14 xl:text-5xl'>
+        <h2 className='mb-10 text-center text-4xl font-extrabold leading-tight text-primary sm:text-5xl md:mb-14 '>
           Services
         </h2>
 
-        <div className='grid grid-cols-1 gap-x-4 px-4 md:grid-cols-2 md:gap-x-8 md:px-16'>
+        <div className='grid grid-cols-1 gap-x-4 px-2 md:grid-cols-2 md:gap-x-8 md:px-4'>
           <div>
             {leftColumnServices.map((service, index) => (
               <motion.div
