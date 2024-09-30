@@ -99,7 +99,7 @@ const ServicesSection = () => {
   const rightColumnServices = services.slice(3);
 
   return (
-    <div className='mx-auto my-auto flex h-[1650px] max-w-7xl items-center p-4 sm:h-[1200px] md:h-screen md:p-8'>
+    <div className='mx-auto my-auto flex h-[1650px] max-w-7xl items-center p-4 sm:h-[1200px] md:h-[900px] md:p-8'>
       <div className='w-full'>
         <h2 className='mb-10 text-center text-4xl font-extrabold leading-tight text-primary sm:text-5xl md:mb-14 '>
           Services
