@@ -189,7 +189,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: '2024-11-29',
+    startDate: '2025-01-03',
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
@@ -377,7 +377,7 @@ const detailedCourses: CourseDetails[] = [
         description: 'Multiple Case Studies; Hands-on Practice.',
       },
     ],
-    startDate: '2024-12-24',
+    startDate: '2024-12-27',
     whatYouWillLearn: [
       'Descriptive Statistics - It includes methodologies such as cross-tabulation, frequencies, and descriptive ratio statistics.',
       'Bivariate Statistics - It includes methodologies such as means, nonparametric tests, correlation, and Analysis of Variance (ANOVA).',
@@ -588,7 +588,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: '2024-11-28',
+    startDate: '2025-01-11',
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
@@ -768,7 +768,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: '2024-11-27',
+    startDate: '2025-01-07',
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
@@ -942,7 +942,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: '2024-12-01',
+    startDate: '2025-01-11',
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
@@ -1295,7 +1295,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: '2024-11-24',
+    startDate: '2025-01-07',
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
