@@ -65,8 +65,8 @@ export default async function Page({ params }: { params: { path: string } }) {
                 className='absolute -top-10 right-0 -z-10 rounded-lg opacity-40'
                 src={course.image}
                 alt={course.title}
-                width={350}
-                height={350}
+                width={200}
+                height={200}
               />
             )}
             <div className='price mt-2 flex flex-col items-start gap-2'>
