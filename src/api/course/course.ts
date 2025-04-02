@@ -1,9 +1,19 @@
 /**
  * TODO: Implement API calls when backend is setup
  */
-
+import React, { useState, useEffect } from 'react';
 import { CourseDetails, CourseInfo } from './course.types';
 import { slugify } from '@/lib/utils';
+// import CourseStartDate from '../course/format';
+import {
+  getNextTuesday,
+  getNextMonday,
+  getNextWednesday,
+  getNextThursday,
+  getNextFriday,
+  getNextSaturday,
+  getNextSunday,
+} from '../course/format';
 
 const courses: CourseInfo[] = [
   {
@@ -189,7 +199,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: '2024-10-04',
+    startDate: getNextMonday(),
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
@@ -377,7 +387,7 @@ const detailedCourses: CourseDetails[] = [
         description: 'Multiple Case Studies; Hands-on Practice.',
       },
     ],
-    startDate: '2024-10-10',
+    startDate: getNextSaturday(),
     whatYouWillLearn: [
       'Descriptive Statistics - It includes methodologies such as cross-tabulation, frequencies, and descriptive ratio statistics.',
       'Bivariate Statistics - It includes methodologies such as means, nonparametric tests, correlation, and Analysis of Variance (ANOVA).',
@@ -588,7 +598,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: '2024-09-28',
+    startDate: getNextWednesday(),
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
@@ -768,7 +778,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: '2024-10-02',
+    startDate: getNextTuesday(),
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
@@ -942,7 +952,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: '2024-05-01',
+    startDate: getNextThursday(),
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
@@ -1145,7 +1155,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: '2024-05-01',
+    startDate: getNextFriday(),
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
@@ -1295,7 +1305,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: '2024-05-01',
+    startDate: getNextSunday(),
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
