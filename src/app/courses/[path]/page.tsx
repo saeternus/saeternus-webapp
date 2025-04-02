@@ -96,6 +96,23 @@ export default async function Page({ params }: { params: { path: string } }) {
                   >
                     Register Now!
                   </Link>
+                  <Link
+                    className={buttonVariants({
+                      size: 'lg',
+                    })}
+                    href={`${course.whatsapp}`}
+                    target='_blank'
+                  >
+                    Join WhatsApp Group{' '}
+                    <span>
+                      <Image
+                        src={'/assets/whatsapp.png'}
+                        alt='whatsapp logo'
+                        width={30}
+                        height={30}
+                      />
+                    </span>
+                  </Link>
                 </div>
                 <div className='flex flex-col items-start justify-center gap-5 py-4 sm:flex-row'>
                   <div className='flex flex-col'>
@@ -106,7 +123,8 @@ export default async function Page({ params }: { params: { path: string } }) {
                   </div>
                   <div>
                     <div>For more info contact {course.contact}</div>
-                    <div>
+
+                    {/* <div>
                       or join{' '}
                       <a
                         href={course.whatsapp}
@@ -123,7 +141,7 @@ export default async function Page({ params }: { params: { path: string } }) {
                           />
                         </span>
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
