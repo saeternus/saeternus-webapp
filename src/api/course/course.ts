@@ -189,7 +189,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: '2025-02-25',
+    startDate: '2025-05-29',
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
@@ -377,7 +377,7 @@ const detailedCourses: CourseDetails[] = [
         description: 'Multiple Case Studies; Hands-on Practice.',
       },
     ],
-    startDate: '2025-05-10',
+    startDate: '2025-05-17',
     whatYouWillLearn: [
       'Descriptive Statistics - It includes methodologies such as cross-tabulation, frequencies, and descriptive ratio statistics.',
       'Bivariate Statistics - It includes methodologies such as means, nonparametric tests, correlation, and Analysis of Variance (ANOVA).',
@@ -588,7 +588,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: '2025-04-27',
+    startDate: '2025-07-20',
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
@@ -768,7 +768,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: '2025-02-23',
+    startDate: '2025-05-29',
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
@@ -942,7 +942,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: '2025-05-07',
+    startDate: '2025-05-24',
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
@@ -1145,7 +1145,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: '2025-02-26',
+    startDate: '2025-05-24',
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
@@ -1295,7 +1295,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: '2025-02-29',
+    startDate: '2025-06-15',
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
