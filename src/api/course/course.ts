@@ -4,16 +4,8 @@
 import React, { useState, useEffect } from 'react';
 import { CourseDetails, CourseInfo } from './course.types';
 import { slugify } from '@/lib/utils';
-// import CourseStartDate from '../course/format';
-import {
-  getNextTuesday,
-  getNextMonday,
-  getNextWednesday,
-  getNextThursday,
-  getNextFriday,
-  getNextSaturday,
-  getNextSunday,
-} from '../course/format';
+
+import { getNextWeekday, Weekday } from '../course/format';
 
 const courses: CourseInfo[] = [
   {
@@ -199,7 +191,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: getNextMonday(),
+    startDate: getNextWeekday(Weekday.Monday),
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
@@ -278,6 +270,8 @@ const detailedCourses: CourseDetails[] = [
       'Geoinformatics',
       'GPS',
     ],
+    enrolledCount: 0,
+    maxCapacity: 0,
   },
   {
     courseId: '2',
@@ -387,7 +381,7 @@ const detailedCourses: CourseDetails[] = [
         description: 'Multiple Case Studies; Hands-on Practice.',
       },
     ],
-    startDate: getNextSaturday(),
+    startDate: getNextWeekday(Weekday.Saturday),
     whatYouWillLearn: [
       'Descriptive Statistics - It includes methodologies such as cross-tabulation, frequencies, and descriptive ratio statistics.',
       'Bivariate Statistics - It includes methodologies such as means, nonparametric tests, correlation, and Analysis of Variance (ANOVA).',
@@ -501,6 +495,8 @@ const detailedCourses: CourseDetails[] = [
       'Multivariate Analysis',
       'Data Visualization',
     ],
+    enrolledCount: 0,
+    maxCapacity: 0,
   },
   {
     courseId: '3',
@@ -598,7 +594,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: getNextWednesday(),
+    startDate: getNextWeekday(Weekday.Wednesday),
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
@@ -672,6 +668,8 @@ const detailedCourses: CourseDetails[] = [
       'Data Modeling',
       'Feature Engineering',
     ],
+    enrolledCount: 0,
+    maxCapacity: 0,
   },
   {
     courseId: '4',
@@ -778,7 +776,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: getNextTuesday(),
+    startDate: getNextWeekday(Weekday.Tuesday),
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
@@ -864,6 +862,8 @@ const detailedCourses: CourseDetails[] = [
       'Geographical Information System',
       'Resolution',
     ],
+    enrolledCount: 0,
+    maxCapacity: 0,
   },
   {
     courseId: '5',
@@ -952,7 +952,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: getNextThursday(),
+    startDate: getNextWeekday(Weekday.Thursday),
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
@@ -1071,6 +1071,8 @@ const detailedCourses: CourseDetails[] = [
       'Citations',
       'H-index',
     ],
+    enrolledCount: 0,
+    maxCapacity: 0,
   },
   {
     courseId: '6',
@@ -1155,7 +1157,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: getNextFriday(),
+    startDate: getNextWeekday(Weekday.Friday),
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
@@ -1240,6 +1242,8 @@ const detailedCourses: CourseDetails[] = [
       'Research Ethics',
       'Scale Development Techniques',
     ],
+    enrolledCount: 0,
+    maxCapacity: 0,
   },
   {
     courseId: '7',
@@ -1305,7 +1309,7 @@ const detailedCourses: CourseDetails[] = [
       },
     ],
     relatedCourses: ['2', '5'],
-    startDate: getNextSunday(),
+    startDate: getNextWeekday(Weekday.Sunday),
     whatYouWillLearn: [
       'Mastering React.js fundamentals',
       'Building reusable components',
@@ -1394,6 +1398,8 @@ const detailedCourses: CourseDetails[] = [
       'Presentation',
       'Report Writing',
     ],
+    enrolledCount: 0,
+    maxCapacity: 0,
   },
 ];
 
