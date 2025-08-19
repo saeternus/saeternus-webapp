@@ -20,6 +20,16 @@ const courses: CourseInfo[] = [
   },
   {
     courseId: '2',
+    title: 'ArcGIS Certification',
+    header: 'Certificate Course in Arc Geographical Information System (GIS)',
+    image: '/assets/arcgis.png',
+    tags: ['ArcGIS', 'Mapping'],
+    prevPrice: '₹7,000',
+    currentPrice: '₹3,540',
+    path: 'arcgis',
+  },
+  {
+    courseId: '3',
     title: 'SPSS Certification',
     header:
       'Certificate Course in Statistical Package for the Social Sciences (SPSS)',
@@ -30,7 +40,7 @@ const courses: CourseInfo[] = [
     path: 'spss',
   },
   {
-    courseId: '3',
+    courseId: '4',
     title: 'Python Data Analysis Certification',
     header: 'Certificate Course in Python - Data Analysis and Visualisation',
     image: '/assets/python.png',
@@ -40,7 +50,7 @@ const courses: CourseInfo[] = [
     path: 'python-data-analysis-visualisation',
   },
   {
-    courseId: '4',
+    courseId: '5',
     title: 'Remote Sensing Certification',
     header: 'Certificate Course in Remote Sensing',
     image: '/assets/RemoteSensing.png',
@@ -50,7 +60,7 @@ const courses: CourseInfo[] = [
     path: 'remote-sensing',
   },
   {
-    courseId: '5',
+    courseId: '6',
     title: 'Research Methodology - Research Design and Writing',
     header:
       'Certificate Course in Research Methodology - Research Design and Writing',
@@ -61,7 +71,7 @@ const courses: CourseInfo[] = [
     path: 'research-methodology-research-design-and-writing',
   },
   {
-    courseId: '6',
+    courseId: '7',
     title: 'Research Methodology Data Collection and Analysis',
     header:
       'Certificate Course in Research Methodology - Data Collection and Analysis',
@@ -72,7 +82,7 @@ const courses: CourseInfo[] = [
     path: 'research-methodology-data-collection-and-analysis',
   },
   {
-    courseId: '7',
+    courseId: '8',
     title: 'Remote Sensing and GIS Project',
     header: 'Research Project in Remote Sensing and GIS',
     image: '/assets/RemoteSensingGIS.png',
@@ -252,7 +262,6 @@ const detailedCourses: CourseDetails[] = [
       'Projection Transformation',
       'Digitisation',
       'Attribute',
-      'ArcGIS',
       'Clip Management',
       'Mosaic',
       'Raster Calculator',
@@ -275,6 +284,193 @@ const detailedCourses: CourseDetails[] = [
   },
   {
     courseId: '2',
+    title: 'Certificate Course in Arc Geographical Information System (ArcGIS)',
+    description:
+      'Emerging technologies such as Arc GIS (Geographic Information System) and RS (Remote Sensing) are instrumental in addressing intricate global challenges and impacting various aspects of life. In this context, the role of a Geospatial expert is gaining significance in the decision-making process. Acquiring practical knowledge is essential to comprehensively grasp the underlying concepts and unlock the potential for innovative applications of these technologies across diverse domains.',
+
+    image: '/assets/arcgis.png',
+    tags: ['ArcGIS', 'Geospatial', 'Mapping'],
+    prevPrice: '₹7,000',
+    currentPrice: '₹3,540',
+    whatsapp: 'https://chat.whatsapp.com/ItD3hpp9F7O5BfU8LA8s6T',
+    contact: '9450906849',
+    formLink: 'https://forms.gle/2KLbzK9qmT7mr59j7',
+    path: 'arcgis',
+    lessons: [
+      {
+        title: 'Introduction to GIS',
+        description:
+          'Overview, A Brief History of GIS, Essential Components of GIS, Software Installation',
+        day: 'Day 1',
+      },
+      {
+        title: 'GIS Basics I',
+        description: 'GIS System, Projection System, Hands on Practice',
+        day: 'Day 2',
+      },
+      {
+        title: 'GIS Basics II',
+        description:
+          'Geodatabase Preparation, Type of GIS Layers, Hands on Practice',
+        day: 'Day 3',
+      },
+      {
+        title: 'GIS Basics III',
+        description:
+          'Georeferencing of Vector, Georeferencing of Raster, Projection Transformation, Hands on Practice',
+        day: 'Day 4',
+      },
+      {
+        title: 'GIS Layer Editing',
+        description:
+          'Digitisation of Point, Line and Polygon, Filling Attributes, Attribute Joining, Area and Perimeter Calculation, Calculations in Attributes, Hands on Practice',
+        day: 'Day 5',
+      },
+      {
+        title: 'Data Management Tools',
+        description:
+          'Vector Operations in GIS Platform, ArcGIS-Clip Management and Mosaic, Raster and Vector Data Clipping, Making Sample Location with GPS Location, Hands on Practice',
+        day: 'Day 6',
+      },
+      {
+        title: 'Spatial Analyst I',
+        description:
+          'Extraction by points, Extraction by mask, Maths tools, Reclassify, Hands on Practice',
+        day: 'Day 7',
+      },
+      {
+        title: 'Spatial Analyst II',
+        description: 'Condition, Interpolation, Hands on Practice',
+        day: 'Day 8',
+      },
+      {
+        title: 'Spatial Analyst III',
+        description: 'Hydrology Tool, Raster Calculator, Hands on Practice',
+        day: 'Day 9',
+      },
+      {
+        title: 'Spatial Analyst IV',
+        description:
+          'Zonal Stats, Table Calculation, Rater & Vector Analysis, Hands on Practice',
+        day: 'Day 10',
+      },
+      {
+        title: 'Use cases of tools',
+        description:
+          'Watershed analysis, Contour preparation, Slope, Aspect and Hill Shade analysis, Hands on Practice',
+        day: 'Day 11',
+      },
+      {
+        title: 'Query Builder',
+        description: 'Query Algorithm, Writing an equation, Hands on Practice',
+        day: 'Day 12',
+      },
+      {
+        title: 'Hands on Practise of Vector Analysis',
+        description: 'Case Study for LULC Change',
+        day: 'Day 13',
+      },
+      {
+        title: 'Hands on Practise of Raster Analysis',
+        description: 'Case study for Change Detection',
+        day: 'Day 14',
+      },
+      {
+        title: 'Map Preparation and Data Export',
+        description:
+          'Scale Fixing, North Direction, Annotation, Exporting Map, Hands on Practice',
+        day: 'Day 15',
+      },
+      {
+        title: 'GIS Open-Source Platform',
+        description:
+          'Q GIS, Vector Operation, Raster Operation, GIS analysis, Map Preparation, Hands on Practice',
+        day: 'Day 16',
+      },
+    ],
+    relatedCourses: ['2', '5'],
+    startDate: '2024-09-27',
+    whatYouWillLearn: [
+      'Mastering React.js fundamentals',
+      'Building reusable components',
+      'Managing state and props efficiently',
+      'Implementing routing and navigation',
+      'Exploring advanced React features like Hooks and Context API',
+    ],
+    courseMeta: [
+      {
+        title: 'Duration',
+        description: '8 weeks',
+        image: '/assets/react-duration.png',
+      },
+      {
+        title: 'Level',
+        description: 'Beginner',
+        image: '/assets/intermediate-level.png',
+      },
+      {
+        title: 'Certification',
+        description: 'Upon successful completion',
+        image: '/assets/certification.png',
+      },
+      {
+        title: 'Language',
+        description: 'English and Hindi',
+        image: '/assets/instructor.png',
+      },
+      {
+        title: 'Instructor',
+        description: 'Leading industry experts',
+        image: '/assets/instructor.png',
+      },
+      {
+        title: 'Prerequisites',
+        description: 'No prerequisites required',
+        image: '/assets/prerequisites.png',
+      },
+      {
+        title: 'Projects',
+        description: 'Hands-on projects to reinforce learning concepts',
+        image: '/assets/projects.png',
+      },
+      {
+        title: 'Community',
+        description:
+          'Access to an exclusive online community for discussions and support',
+        image: '/assets/community.png',
+      },
+    ],
+    keywords: [
+      'Geographical Information system',
+      'GIS System',
+      'Projection System',
+      'Geodatabase',
+      'GIS Layers',
+      'Georeferencing',
+      'Projection Transformation',
+      'Digitisation',
+      'Attribute',
+      'ArcGIS',
+      'Clip Management',
+      'Mosaic',
+      'Raster Calculator',
+      'Table Calculation',
+      'Rater & Vector Analysis',
+      'Query Builder',
+      'Change Detection',
+      'Map Preparation',
+      'Q GIS',
+      'Vector Operation',
+      'Raster Operation',
+      'GIS analysis',
+      'Remote Sensing',
+      'Geo spatial technology',
+      'Geoinformatics',
+      'GPS',
+    ],
+  },
+  {
+    courseId: '3',
     title:
       'Certificate Course in Statistical Package for the Social Sciences (SPSS)',
     description:
@@ -499,7 +695,7 @@ const detailedCourses: CourseDetails[] = [
     maxCapacity: 0,
   },
   {
-    courseId: '3',
+    courseId: '4',
     title: 'Certificate Course in Python - Data Analysis and Visualisation',
     description:
       "Unlock the power of Python for data analysis and visualization in this comprehensive course. From mastering fundamental Python concepts to handling datasets and conducting exploratory data analysis, you'll gain the skills to visualize data effectively. Explore a variety of plots, charts, and statistical techniques, and even delve into geospatial data visualization. Elevate your proficiency in Python and transform raw data into meaningful insights. Join us on this engaging journey of learning and acquire the expertise needed for impactful data-driven decision-making.",
@@ -672,7 +868,7 @@ const detailedCourses: CourseDetails[] = [
     maxCapacity: 0,
   },
   {
-    courseId: '4',
+    courseId: '5',
     title: 'Certificate Course in Remote Sensing',
     description:
       'The Certificate Course in Remote Sensing offers a comprehensive training program, covering essential principles of remote sensing and hands-on experience with relevant software. This course provides practical skills in image processing, classification, and spatial modeling, enabling participants to harness the power of remote sensing data for environmental monitoring, resource management, and GIS applications. ',
@@ -866,7 +1062,7 @@ const detailedCourses: CourseDetails[] = [
     maxCapacity: 0,
   },
   {
-    courseId: '5',
+    courseId: '6',
     title:
       'Certificate Course in Research Methodology - Research Design and Writing',
     description:
@@ -1075,7 +1271,7 @@ const detailedCourses: CourseDetails[] = [
     maxCapacity: 0,
   },
   {
-    courseId: '6',
+    courseId: '7',
     title:
       'Certificate Course in Research Methodology - Data Collection and Analysis',
     description:
@@ -1229,6 +1425,7 @@ const detailedCourses: CourseDetails[] = [
       'Mapping',
       'Python',
       'Remote Sensing',
+      'ArcGIS',
       'GIS',
       'Data Analysis',
       'Statistical Techniques',
@@ -1246,7 +1443,7 @@ const detailedCourses: CourseDetails[] = [
     maxCapacity: 0,
   },
   {
-    courseId: '7',
+    courseId: '8',
     title: 'Research Project in Remote Sensing and GIS',
     description:
       'Join us to work on your very own research project or pick from one of our ideas that aligns with your interests. This will involve working with our experts to apply your Remote Sensing and GIS skills to real world case studies. In the end, you get an opportunity to publish a research paper!',

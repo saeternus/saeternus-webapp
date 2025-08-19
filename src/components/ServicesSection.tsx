@@ -22,42 +22,42 @@ const services = [
     icon: <UserRoundPen className='h-10 w-10 text-primary' />,
     title: 'Profile Evaluation',
     description:
-      'Get a thorough assessment of your academic and professional profile, helping you identify your strengths and areas for improvement.',
+      'Track your expenses effortlessly with our intuitive budget tracking tools. Do cillum culpa labore laboris incididunt velit ipsum.',
     delay: 0.1,
   },
   {
     icon: <NotebookText className='h-10 w-10 text-primary' />,
     title: 'College Shortlisting',
     description:
-      'We guide you in selecting the best-fit colleges and craft personalized applications aligining with their values, leaving a lasting impression on the admissions committee.',
+      "Customizing your essay to align with the admission committee's mindset for each college. Do cillum culpa labore laboris incididunt velit ipsum.",
     delay: 0.3,
   },
   {
     icon: <MessageSquare className='h-10 w-10' />,
-    title: 'MS/PhD Interviews',
+    title: 'MS/PhD interviews',
     description:
-      'Sharpen your interview skills with tailored mock sessions and expert feedback, ensuring you leave a lasting impression on admission committees.',
+      'Track your expenses effortlessly with our intuitive budget tracking tools. Do cillum culpa labore laboris incididunt velit ipsum.',
     delay: 0.5,
   },
   {
     icon: <Plane className='h-10 w-10 text-primary' />,
     title: 'Visa Interviews',
     description:
-      'Receive personalized coaching to help you confidently navigate your visa interview process, ensuring you are well-prepared for success.',
+      'Track your expenses effortlessly with our intuitive budget tracking tools. Do cillum culpa labore laboris incididunt velit ipsum.',
     delay: 0.2,
   },
   {
     icon: <Globe className='h-10 w-10 text-primary' />,
     title: 'End-to-End Guidance',
     description:
-      'Comprehensive support from applications to acceptances and beyond, optimized for your larger career goal in mind, be it academia or industry.',
+      'For pathway into Industry and Academia. Do cillum culpa labore laboris incididunt velit ipsum.',
     delay: 0.4,
   },
   {
     icon: <Pencil className='h-10 w-10' />,
-    title: 'Tailored SoPs and Essays',
+    title: 'Tailored SOP/Essay',
     description:
-      'Our experts will work with you to craft a compelling Statement of Purpose that aligns your profile with the goals of your target program or research groups.',
+      "In this service, we camouflage your weak areas and accentuate your strengths, customizing your essay to align with the admission committee's mindset for each college.",
     delay: 0.6,
   },
 ];
@@ -72,17 +72,15 @@ interface ServiceProp {
 }
 
 const ServiceCard = ({ service }: ServiceProp) => (
-  <div className='mb-6 mt-10 flex items-start space-x-6'>
-    <div className='flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-gray-50 p-5 text-primary'>
+  <div className='mb-6 mt-10 flex flex-col items-center space-y-6 text-center sm:flex-row sm:space-x-6 sm:text-left'>
+    <div className='h-13 w-13 flex  items-center justify-center rounded-full bg-gray-50 p-3 text-primary sm:h-20 sm:w-20 sm:p-5'>
       {service.icon}
     </div>
     <div className='flex-grow'>
-      <h3 className='mb-2 text-2xl font-bold text-gray-900 md:text-3xl'>
+      <h3 className='mb-2 text-2xl font-bold text-gray-900 lg:text-3xl'>
         {service.title}
       </h3>
-      <p className='text-base text-gray-700 md:text-lg'>
-        {service.description}
-      </p>
+      <p className='text-md text-gray-700 lg:text-lg'>{service.description}</p>
     </div>
   </div>
 );
@@ -101,19 +99,19 @@ const ServicesSection = () => {
   const rightColumnServices = services.slice(3);
 
   return (
-    <div className='mx-auto my-auto flex min-h-screen max-w-7xl items-center p-4 sm:p-8'>
+    <div className='mx-auto my-auto flex h-[1650px] max-w-7xl items-center p-4 sm:h-[1200px] md:h-[900px] md:p-8'>
       <div className='w-full'>
-        <h2 className='mb-5 text-center text-3xl font-extrabold leading-tight text-primary sm:text-3xl md:mb-14 md:text-4xl lg:text-5xl'>
+        <h2 className='mb-10 text-center text-4xl font-extrabold leading-tight text-primary sm:text-5xl md:mb-14 '>
           Services
         </h2>
 
-        <div className='px-4 sm:px-8 md:grid md:grid-cols-2 md:gap-10 md:gap-x-8 md:px-12'>
+        <div className='grid grid-cols-1 gap-x-4 px-2 md:grid-cols-2 md:gap-x-8 md:px-4'>
           <div>
             {leftColumnServices.map((service, index) => (
               <motion.div
                 variants={cardVariants}
                 initial='hidden'
-                animate={card1InView ? 'visible' : 'hidden'}
+                animate={card2InView ? 'visible' : 'hidden'}
                 transition={{ duration: 0.5, delay: service.delay }}
                 ref={card1Ref}
                 key={index}
