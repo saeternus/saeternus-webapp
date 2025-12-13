@@ -7,8 +7,36 @@ export async function POST(request: NextRequest) {
 
   console.log('Request Body:', body);
 
-  const { email, name, number, subject, message, route, program } = body;
+  const { email, name, number, subject, message, route, program, captcha } =
+    body;
+  if (!captcha) {
+    return NextResponse.json(
+      { status: 'error', message: 'Missing reCAPTCHA token' },
+      { status: 400 }
+    );
+  }
 
+  const secretKey = process.env.RECAPTCHA_SECRET_KEY;
+
+  const verifyUrl = `https://www.google.com/recaptcha/api/siteverify`;
+
+  const recaptchaResponse = await fetch(verifyUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: `secret=${secretKey}&response=${captcha}`,
+  }).then((res) => res.json());
+  console.log('Recaptcha Validation:', recaptchaResponse);
+  if (
+    !recaptchaResponse.success ||
+    (recaptchaResponse.score && recaptchaResponse.score < 0.5)
+  ) {
+    return NextResponse.json(
+      { status: 'error', message: 'reCAPTCHA failed.' },
+      { status: 400 }
+    );
+  }
   const transport = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -50,14 +78,13 @@ export async function POST(request: NextRequest) {
     await sendMailPromise();
     return NextResponse.json({
       status: 'success',
-      message: 'Form submitted successfully. We will get back to you shortly.',
+      message: 'Message sent. We will get back to you shortly.',
     });
   } catch (err) {
     return NextResponse.json(
       {
         status: 'error',
-        message:
-          'There was an error submitting the form. Please try again later.',
+        message: 'There was an error submitting the form. Please try again.',
         error: err,
       },
       { status: 500 }
